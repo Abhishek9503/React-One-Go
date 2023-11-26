@@ -1,0 +1,44 @@
+.book{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1 px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.book-image{
+flex: 0 0 100px;
+margin-right: 20px;
+}
+
+.book-image img{
+    display: block;
+    max-width: 100px;
+    height: auto;
+}
+
+.book-info{
+    flex:1;
+
+}
+
+.book-author{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+button{
+    background-color: rgb(153, 248, 05);
+    color: rgb(8, 7, 7);
+    border-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 10px ;
+    outline: none;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
