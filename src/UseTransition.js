@@ -3,9 +3,10 @@ import React, { startTransition, useState, useTransition } from "react";
 const UseTransition = () => {
   const [name, setName] = useState("");
   const [lists, setLists] = useState([]);
-  const [ isPending, setIsPending]= useTransition();
+  const [ isPending, startTransition]= useTransition();
+  useTransition();
 
-  const LIST_SIZE = 200;
+  const LIST_SIZE = 1000;
 
   const handleChange = (e) => {
     const { value } = e.target;
@@ -29,10 +30,12 @@ const UseTransition = () => {
   return (
     <div>
       <input type="text" value={name} onChange={handleChange} key="input" />
-
-      {lists.map((list, index) => {
+      {
+        isPending ? (<div>Loading...</div>):lists.map((list, index) => {
         return <div key={index}>{lists}</div>;
-      })}
+      })
+      }
+     
     </div>
   );
 };
