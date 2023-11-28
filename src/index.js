@@ -14,8 +14,11 @@ import UseReducerTutorial from "./UseReducerTutorial";
 import UseReducerEx from "./UseReducerEx";
  import UseRefEx from "./Useref/UseRefEx";
  import UseRefEx2 from "./Useref/UseRefEx2";
-
-
+ import UseRefDom from "./Useref/UseRefDom";
+ import CustomHook from "./CustomHook";
+ import CustomHook2 from "./CustomHook2";
+ import UseLayoutExample from "./UseLayoutExample";
+ import UseTransition from "./UseTransition";
 const root= ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -33,6 +36,12 @@ root.render(
     {/* <UseReducerTutorial/> */}
     {/* <UseReducerEx/> */}
     {/* <UseRefEx/> */}
-    <UseRefEx2/>
+    {/* <UseRefEx2/> */}
+    {/* <UseRefDom/> */}
+    {/* <CustomHook/> */}
+    {/* <CustomHook2/> */}
+    {/* <UseLayoutExample/> */}
+      <UseTransition/>
+
   </React.StrictMode>
 )
