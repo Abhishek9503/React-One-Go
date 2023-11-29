@@ -27,6 +27,7 @@ import Child from "./UseImperative/Child";
 import Parent from "./UseImperative/Parent";
 import RouterExample from "./Router/RouterExample";
 import Navbar from "./Router/Navbar/Navbar";
+import FormVal from "./FormVal";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -59,7 +60,7 @@ root.render(
     {/* <Parent/> */}
     {/* <Child/> */}
     {/* <RouterExample/> */}
-
+{/* 
     <BrowserRouter>
       <Navbar />
       <Routes>
@@ -74,6 +75,7 @@ root.render(
 
         <Route path="*" element={<div><img src="https://www.elegantthemes.com/blog/wp-content/uploads/2020/08/000-http-error-codes.png" alt="" /></div>}></Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <FormVal/>
   </React.StrictMode>
 );
